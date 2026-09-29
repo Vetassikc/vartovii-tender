@@ -1,0 +1,21 @@
+{
+  "name": "vartovii-tender-demo",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "check": "node --check server.mjs && node --check server/adapter.mjs && node --check mock-server.mjs && node --check src/client.js && node --check src/protocol.mjs && node --check src/tender-view.mjs",
+    "dev": "node server.mjs",
+    "mock": "node mock-server.mjs",
+    "test": "node --test test/*.test.mjs"
+  },
+  "dependencies": {
+    "@anchor-lang/core": "1.1.2",
+    "@arcium-hq/client": "0.13.2",
+    "@noble/curves": "1.9.7",
+    "@noble/hashes": "1.8.0",
+    "@solana/web3.js": "1.98.4",
+    "tweetnacl": "1.0.3",
+    "vite": "6.1.0"
+  }
+}
