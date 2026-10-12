@@ -72,6 +72,7 @@ Open each buyer view in a local browser:
 | Pending | `/buyer?tender=pending` | Queued; no award |
 | Finalized nonzero | `/buyer?tender=finalized-nonzero-no-award` | Finalized; no award |
 | Account read failure | `/buyer?tender=account-read-failure` | Unavailable; no award |
+| Supplier session (read-only) | `/supplier?slot=0` | Browser identity and bid form; submission not supported in the mock |
 
 Prefix each suffix with `http://127.0.0.1:4174` (or the selected local port).
 The first API read is `GET /api/config`; each buyer view then requests

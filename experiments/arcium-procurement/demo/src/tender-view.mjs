@@ -48,8 +48,8 @@ export function buyerReadoutModel(result) {
     accountVerification: trusted
       ? "This receipt reads a finalized Tender account with result status 0."
       : `This receipt reads a ${accountState} Tender account with result status ${resultStatus ?? "unavailable or malformed"}. ${actionCopy(result)}`,
-    callbackProvenance: "This page does not check callback transaction history for this Tender. A separate synthetic B3 run has retained, independently reviewed callback evidence.",
-    verificationLimit: "This demo uses synthetic local data. Independent review covered one completed B3 run. B2 adversarial integrity and repeatability remain unverified. No devnet, production, customer-use, or independent-trust claim is made.",
+    callbackProvenance: "This page does not check callback transaction history for this Tender. Callback evidence from one end-to-end local run was retained and independently reviewed.",
+    verificationLimit: "This demo uses synthetic local data. Independent review covered one completed end-to-end local run. Adversarial callback testing and repeated runs are still open. No devnet, production, customer-use, or independent-trust claim is made.",
   };
 }
 

@@ -161,7 +161,7 @@ function serveStatic(requestPath, staticRoot, response) {
     return;
   }
 
-  const requestedPath = decodedPath === "/" || decodedPath === "/buyer"
+  const requestedPath = decodedPath === "/" || decodedPath === "/buyer" || decodedPath === "/supplier"
     ? "/index.html"
     : decodedPath;
   const filePath = path.resolve(realStaticRoot, `.${requestedPath}`);

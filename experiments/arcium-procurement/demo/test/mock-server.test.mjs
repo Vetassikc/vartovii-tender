@@ -163,3 +163,9 @@ test("fails closed for every non-GET method and non-allowlisted API route", asyn
     });
   }
 });
+
+test("serves the supplier session page shell for read-only review", async () => {
+  const response = await fetch(`${baseUrl}/supplier?slot=0`);
+  assert.equal(response.status, 200);
+  assert.match(await response.text(), /assets\/app\.js/);
+});

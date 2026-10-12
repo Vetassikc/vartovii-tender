@@ -62,10 +62,10 @@ test("buyer receipt identifies the tender, commitment, account read, award, and 
   });
   assert.match(receipt.accountVerification, /finalized tender account.*result status 0/i);
   assert.match(receipt.callbackProvenance, /does not check callback transaction history for this Tender/i);
-  assert.match(receipt.callbackProvenance, /separate synthetic B3 run.*independently reviewed callback evidence/i);
+  assert.match(receipt.callbackProvenance, /one end-to-end local run.*independently reviewed/i);
   assert.match(receipt.verificationLimit, /synthetic local data/i);
-  assert.match(receipt.verificationLimit, /one completed B3 run/i);
-  assert.match(receipt.verificationLimit, /B2 adversarial integrity.*repeatability/i);
+  assert.match(receipt.verificationLimit, /one completed end-to-end local run/i);
+  assert.match(receipt.verificationLimit, /Adversarial callback testing and repeated runs are still open/i);
   assert.match(receipt.verificationLimit, /No devnet, production, customer-use, or independent-trust claim/i);
 });
 

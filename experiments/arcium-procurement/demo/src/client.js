@@ -16,9 +16,9 @@ const app = document.querySelector("#app");
 
 app.innerHTML = `
   <main class="shell">
-    <p class="eyebrow">VARTOVII COMMIT / LOCAL PROOF SURFACE</p>
-    <h1>Confidential procurement, made inspectable.</h1>
-    <p class="lede">A bounded two-lot tender where suppliers submit encrypted quotes and the buyer receives only the finalized allocation.</p>
+    <p class="eyebrow">VARTOVII TENDER / LOCAL PROTOTYPE</p>
+    <h1>The cheapest award isn’t always deliverable.</h1>
+    <p class="lede">Suppliers submit encrypted prices and capacity. Arcium MPC picks the lowest-cost award they can actually deliver, and the buyer sees only that award.</p>
     <section class="notice" data-role="notice" hidden></section>
     <section class="role-picker" aria-label="Choose role">
       <a class="role-link" href="${roleUrl("buyer", "/buyer")}">Open buyer desk <span>→</span></a>
@@ -43,8 +43,8 @@ function renderBuyer() {
       <header class="masthead">
         <div>
           <p class="eyebrow">BUYER DESK / CONFIDENTIAL PROCUREMENT</p>
-          <h1>Assemble a tender. Read one bounded decision.</h1>
-          <p class="lede">The buyer can verify the lifecycle and final allocation. Supplier quotes remain encrypted through submission and MPC execution.</p>
+          <h1>Run a tender. See only the feasible award.</h1>
+          <p class="lede">Follow the tender from open to finalized. Supplier quotes stay encrypted through submission and MPC execution; losing quotes are never shown here.</p>
         </div>
         <a class="quiet-link" href="${roleUrl("buyer", "/")}">Exit desk</a>
       </header>
@@ -73,7 +73,7 @@ function renderBuyer() {
           <details class="evidence"><summary>View verification receipt</summary><pre data-role="receipt">No tender yet.</pre></details>
         </aside>
       </div>
-      <section class="footer-note">Localnet only · synthetic identities · no settlement · one machine is not independent trust</section>
+      <section class="footer-note">Local Solana validator · synthetic suppliers · no settlement</section>
     </main>
   `;
   bootBuyer();

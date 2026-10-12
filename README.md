@@ -1,8 +1,17 @@
+<img src="media/logo-mark.svg" width="72" alt="Vartovii Tender logo">
+
 # Vartovii Tender
 
 ### A feasible procurement award from encrypted supplier bids.
 
-**Solana · Arcium MPC · Capacity-aware allocation**
+**Solana · Arcium MPC · Capacity-aware allocation** · Built for Colosseum's Crypto World's Fair
+
+![The cheapest award isn't always deliverable: 80 is infeasible, 85 is the lowest-cost feasible award](media/project-cover.png)
+
+| Watch | Link |
+| --- | --- |
+| Product demo (3 min) | DEMO_VIDEO_URL |
+| Pitch (2 min) | PITCH_VIDEO_URL |
 
 A buyer needs two lots fulfilled. The cheapest supplier can handle only one.
 Vartovii Tender explores how to select a feasible award without requiring the
@@ -115,6 +124,10 @@ The committed reviewer guide covers four read-only views: successful award at
 85, pending computation, finalized nonzero status with no award, and account
 read failure. This path uses static fixtures, has no mutation endpoints and
 does not connect to Solana or Arcium.
+
+The mock also serves a read-only supplier session page (`/supplier?slot=0`)
+that generates a browser identity and shows the encrypted-bid form; submitting
+from the mock is intentionally not supported.
 
 The mock is a UI review aid. It does not replay the separately accepted B3 run.
 Do not use the normal `dev` server as a fresh-clone review command: its live
