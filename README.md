@@ -1,4 +1,4 @@
-<img src="media/logo-mark.svg" width="72" alt="Vartovii Tender logo">
+<img src="media/logo-mark.png" width="72" alt="Vartovii Tender logo">
 
 # Vartovii Tender
 
