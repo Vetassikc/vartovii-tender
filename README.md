@@ -8,11 +8,6 @@
 
 ![The cheapest award isn't always deliverable: 80 is infeasible, 85 is the lowest-cost feasible award](media/project-cover.png)
 
-| Watch | Link |
-| --- | --- |
-| Product demo (3 min) | DEMO_VIDEO_URL |
-| Pitch (2 min) | PITCH_VIDEO_URL |
-
 A buyer needs two lots fulfilled. The cheapest supplier can handle only one.
 Vartovii Tender explores how to select a feasible award without requiring the
 buyer to receive every supplier's losing quote.
