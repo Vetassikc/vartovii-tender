@@ -183,8 +183,16 @@ package.
 4. **Commercial product:** security assessment, broader allocation requirements
    and operational integrations, gated by pilot feedback and paid repeat use.
 
-## Attribution and licensing
+## License and attribution
 
-See [upstream attribution](experiments/arcium-procurement/ATTRIBUTION.md) for
-the public Arcium example used as a reference. No repository-wide public
-license has been selected yet.
+Copyright (C) 2026 Vitalii Radionov. The code written for this project is
+licensed under the **GNU Affero General Public License v3.0** (see
+[LICENSE](LICENSE)). In short: you may use, study and modify it, but if you run
+a modified version as a network service you must also publish your source under
+the same license. For a different arrangement, contact the author via
+[@vartovii on X](https://x.com/vartovii).
+
+The reference scaffold comes from the public Arcium examples; see
+[upstream attribution](experiments/arcium-procurement/ATTRIBUTION.md). The
+upstream example is not redistributed in this repository, and its own terms
+(package metadata declares ISC) are unaffected by this license.
